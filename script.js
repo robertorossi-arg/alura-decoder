@@ -21,9 +21,9 @@ function encriptarTexto(){
     output_texto.value = crypt(texto);
   } else {
     alert("Texto inválido");
-    input_texto.value = "";
-    output_texto.value = "";
+    input_texto.select();
     input_texto.focus();
+    output_texto.value = "";
   }
 }
 
